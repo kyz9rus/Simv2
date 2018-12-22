@@ -84,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/InputModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="194">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#checkCorrect#0;class#InputModel#0" />
@@ -290,12 +290,12 @@
       <workItem from="1540826492252" duration="24330000" />
       <workItem from="1541328683948" duration="971000" />
       <workItem from="1541602816970" duration="5872000" />
-      <workItem from="1545508476665" duration="1577000" />
+      <workItem from="1545508476665" duration="3696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99710000" />
+    <option name="totallyTimeSpent" value="101829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,7 +319,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30240965" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.26506025" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35060242" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
@@ -578,8 +578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InputModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="194">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#checkCorrect#0;class#InputModel#0" />
