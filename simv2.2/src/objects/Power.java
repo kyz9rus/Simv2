@@ -1,6 +1,6 @@
 package objects;
 
-public class Power extends Operation{
+public class Power extends Operand{
     private Integer power;
 
     public Power (){}
