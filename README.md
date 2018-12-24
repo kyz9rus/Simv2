@@ -17,4 +17,11 @@ This application also works with nested matrices.
 
 To run application just open this project in your IDE and run Main.main(). The result will be in file output.xhtml.
 
-If you use IDEA you can exit configuration and add launch the browser after building (you need to set url to output.xhtml file in the IDEA window (it can be http://localhost:63342/simv2.2/output.xhtml))
+If you use IDEA you can edit configuration and add launch the browser after building (you need to set url to output.xhtml file in the IDEA window (it can be http://localhost:63342/simv2.2/output.xhtml))
+
+---
+If for different reasons IDE can't find the main class -> go to project settings and mark src folder as source.
+
+Also you can get error "invalid soure release: number" -> check in module settings: project sdk and project level version must have the same java version.
+
+Be sure that path to project compiler output set to folder "out" in root directory.
