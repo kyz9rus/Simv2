@@ -10,4 +10,8 @@ public class Number extends Operand{
     public Double getNumber() {
         return number;
     }
+
+    public Double add (Double value){
+        return number + value;
+    }
 }

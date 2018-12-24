@@ -20,9 +20,6 @@ public class InputModel {
 
     private boolean hasOperations = false;
 
-    private MatrixInfo matrixInfo;
-    private boolean isMatrixInfoInit = false;
-
     public InputModel(Resource resource) {
         this.resource = resource;
     }
@@ -77,11 +74,6 @@ public class InputModel {
                     case "matrix":
                         Operand matrix = getElement(subNode.getChildNodes());
 
-                        if (!isMatrixInfoInit) {
-                            initMatrixInfo((Matrix) matrix);
-                            isMatrixInfoInit = true;
-                        }
-
                         operands.add(matrix);
 
                         break;
@@ -111,37 +103,6 @@ public class InputModel {
         }
 
         return operands;
-    }
-
-    private void initMatrixInfo(Matrix matrix) {
-        int nestingLevel = 0;
-        int[] M;
-        int[] N;
-
-        Matrix tempMaptrix = matrix;
-
-        while (tempMaptrix.getElement(0, 0) instanceof Matrix) {
-            nestingLevel++;
-
-            tempMaptrix = (Matrix) tempMaptrix.getElement(0, 0);
-        }
-
-        nestingLevel++;
-
-        M = new int[nestingLevel];
-        N = new int[nestingLevel];
-
-        tempMaptrix = matrix;
-        for (int i = 0; i < nestingLevel; i++) {
-
-            M[i] = tempMaptrix.getM();
-            N[i] = tempMaptrix.getN();
-
-            if (i != nestingLevel - 1)
-                tempMaptrix = (Matrix) matrix.getElement(0, 0);
-        }
-
-        matrixInfo = new MatrixInfo(nestingLevel, M, N);
     }
 
     private Expression getExpressionFromFile(Node node) throws ParseException {
@@ -343,9 +304,5 @@ public class InputModel {
 
 
         return resultMatrix;
-    }
-
-    public MatrixInfo getMatrixInfo() {
-        return matrixInfo;
     }
 }
