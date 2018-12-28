@@ -13,20 +13,20 @@ public class OutputModel {
     private Resource resource;
     private Error error;
 
-    public OutputModel(Matrix resultMatrix, Resource resource, Error error){
+    public OutputModel(Matrix resultMatrix, Resource resource, Error error) {
         this.resultMatrix = resultMatrix;
         this.resource = resource;
         this.error = error;
     }
 
-    public OutputModel(Resource resource, Error error){
+    public OutputModel(Resource resource, Error error) {
         this.resource = resource;
         this.error = error;
     }
 
-    public void print(){
+    public void print() {
         try (FileWriter fileWriter = new FileWriter(resource.getFile().getName())) {
-            if (error != null){
+            if (error != null) {
                 fileWriter.write("<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">\n" +
                         "<head>\n" +
                         "    <title>MathML</title>\n" +

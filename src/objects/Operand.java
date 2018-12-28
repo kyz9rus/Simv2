@@ -1,3 +1,4 @@
 package objects;
 
-public class Operand {}
+public class Operand {
+}

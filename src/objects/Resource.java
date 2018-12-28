@@ -5,7 +5,7 @@ import java.io.File;
 public class Resource {
     private File file;
 
-    public Resource(String fileName){
+    public Resource(String fileName) {
         file = new File(fileName);
     }
 

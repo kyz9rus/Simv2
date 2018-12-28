@@ -22,5 +22,7 @@ public class Matrix<T> extends Operand {
         matrix[i][j] = element;
     }
 
-    public T getElement(int i, int j) { return matrix[i][j]; }
+    public T getElement(int i, int j) {
+        return matrix[i][j];
+    }
 }

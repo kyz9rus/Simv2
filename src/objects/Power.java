@@ -1,9 +1,9 @@
 package objects;
 
-public class Power extends Operand{
+public class Power extends Operand {
     private Integer power;
 
-    public Power (Integer power){
+    public Power(Integer power) {
         this.power = power;
     }
 

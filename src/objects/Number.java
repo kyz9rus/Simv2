@@ -1,9 +1,9 @@
 package objects;
 
-public class Number extends Operand{
+public class Number extends Operand {
     private Double number;
 
-    public Number (Double number){
+    public Number(Double number) {
         this.number = number;
     }
 
@@ -11,7 +11,7 @@ public class Number extends Operand{
         return number;
     }
 
-    public Double add (Double value){
+    public Double add(Double value) {
         return number + value;
     }
 }

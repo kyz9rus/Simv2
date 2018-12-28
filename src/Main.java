@@ -8,7 +8,7 @@ import objects.Resource;
 public class Main {
     public static void main(String[] args) {
 
-        Resource inputResource = new Resource("input.xml");
+        Resource inputResource = new Resource("input(add).xml");
         Resource outputResource = new Resource("output.xhtml");
 
         InputModel inputModel;
@@ -23,8 +23,7 @@ public class Main {
             calcModel.calculate();
 
             outputModel = new OutputModel(calcModel.getResult(), outputResource, null);
-        }
-        catch (ParseException | NullPointerException e1) {
+        } catch (ParseException | NullPointerException e1) {
             outputModel = new OutputModel(outputResource, new Error(e1.getMessage()));
             outputModel.print();
 
