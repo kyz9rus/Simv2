@@ -6,16 +6,16 @@ To calc you need to write expression to input.xml file (in directory simv2.2) wr
 
 There are operations:
 - add - addition matrices;
-- sub - suntract matrices;
+- sub - subtract matrices;
 - mul - multiply matrices;
 - mulNumber - multiply matrix by number;
 - expontiate - raise matrix to power;
 - transpose - transpose matrix;
 
-Bynary operations are worked with not only 2 operands, there are a lot of matrices.
+Bynary operations are worked with not only 2 operands, there are can be a lot of matrices.
 This application also works with nested matrices.
 
-To run application just open this project in your IDE and run Main.main(). The result will be in file output.xhtml.
+To run application just open this project in your IDE and run Main.main(). The result will be in file output.xhtml (MathML format).
 
 If you use IDEA you can edit configuration and add launch the browser after building (you need to set url to output.xhtml file in the IDEA window (it can be http://localhost:63342/simv2.2/output.xhtml))
 
